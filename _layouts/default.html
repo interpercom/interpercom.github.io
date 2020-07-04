@@ -1,17 +1,15 @@
 <!doctype html>
 <html lang="en">
-  
+
   {% include head.html %}
-  
-  <body>
+
+  <body class="page-body">
 
     {% include header.html %}
 
-    <section>
-      <main class="default page-content" aria-label="Content">
-        <div class="wrapper">
-          {{ content }}
-        </div>
+    <section id="page" class="page">
+      <main class="page-content" aria-label="Content">
+        {{ content }}
       </main>
     </section>
 
