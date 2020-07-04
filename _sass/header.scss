@@ -23,11 +23,28 @@
     float: left;
   }
 
+  #user {
+    color: #276fa2;
+    cursor: pointer;
+    display: block;
+    display: inline-block;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    float: right;
+  }
+
   .sgae {
     line-height: 2.75em;
     color: #276fa2;
     font-weight: 700;
     margin-right: 25px;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -60,6 +77,8 @@
     padding: 0 48px;
     cursor: pointer;
     white-space: pre;
+    color: #a0a0a1;
+    display: block;
 
     &:before {
       margin-right: 0.75em;
@@ -68,6 +87,7 @@
     &:hover {
       color: #276fa2;
       background: #efefef;
+      text-decoration: none;
     }
   }
 }

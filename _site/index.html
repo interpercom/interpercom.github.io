@@ -16,16 +16,17 @@
     <div id="header">
   <span id="menu" onclick="toggleSidebar()" class="menu icon fa-bars"></span>
   <a class="sgae" href="/">SGAE</a>
+  <span id="user" onclick="toggleUserDropdown()" class="menu icon fa-user"></span>
 </div>
 
 <div id="sidebar" class="sidebar">
 	<div class="menu-options">
-		<div class="option icon fa-map">Planes de Estudio</div>
-		<div class="option icon fa-eye">Previas</div>
-		<div class="option icon fa-calendar">Calendarios e Inscripciones</div>
-		<div class="option icon fa-pencil-square-o">Consulta de Inscripciones</div>
-		<div class="option icon fa-graduation-cap">Escolaridad</div>
-		<div class="option icon fa-ban">Sanciones</div>
+		<a href="/pages/planes_de_estudio" class="option icon fa-map">Planes de Estudio</a>
+		<a href="/pages/previas" class="option icon fa-eye">Previas</a>
+		<a href="/pages/calendarios_e_inscripciones" class="option icon fa-calendar">Calendarios e Inscripciones</a>
+		<a href="/pages/consulta_de_inscripciones" class="option icon fa-pencil-square-o">Consulta de Inscripciones</a>
+		<a href="/pages/escolaridad" class="option icon fa-graduation-cap">Escolaridad</a>
+		<a href="/pages/sanciones" class="option icon fa-ban">Sanciones</a>
 	</div>
 </div>
 
@@ -42,7 +43,7 @@
     </section>
 
     <div id="footer-header">
-  <img class="photo" src="images/logo-full-horizontal.png"/>
+  <img class="photo" src="/images/logo-full-horizontal.png"/>
   <span id="#about" onclick="expandFooter()" class="about icon fa-info-circle">Ayuda</span>
 </div>
 
