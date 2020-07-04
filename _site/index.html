@@ -14,9 +14,19 @@
   <body>
 
     <div id="header">
-  <a href="/">
-    <h1>Home</h1>
-  </a>
+  <span id="menu" onclick="toggleSidebar()" class="menu icon fa-bars"></span>
+  <a class="sgae" href="/">SGAE</a>
+</div>
+
+<div id="sidebar" class="sidebar">
+	<div class="menu-options">
+		<div class="option icon fa-map">Planes de Estudio</div>
+		<div class="option icon fa-eye">Previas</div>
+		<div class="option icon fa-calendar">Calendarios e Inscripciones</div>
+		<div class="option icon fa-pencil-square-o">Consulta de Inscripciones</div>
+		<div class="option icon fa-graduation-cap">Escolaridad</div>
+		<div class="option icon fa-ban">Sanciones</div>
+	</div>
 </div>
 
 
@@ -24,145 +34,7 @@
       <main class="default page-content" aria-label="Content">
         <div class="wrapper">
           <div class="home">
-  <span class="cities-title">Places of the world</span>
-  <div class="cities-index">
-    
-      <a class="city" id="1" href="/cities/amsterdam">
-        <img src="/images/thumb/amsterdam/06_IMG_0418.jpg"/>
-        <span class="center title ">Amsterdam</span>
-      </a>
-    
-      <a class="city" id="2" href="/cities/annecy">
-        <img src="/images/thumb/annecy/07_IMG_3184.jpg"/>
-        <span class="center title ">Annecy</span>
-      </a>
-    
-      <a class="city" id="3" href="/cities/bled">
-        <img src="/images/thumb/bled/11_IMG_3212.jpg"/>
-        <span class="center title ">Bled</span>
-      </a>
-    
-      <a class="city" id="4" href="/cities/bourg_doisins">
-        <img src="/images/thumb/bourg_doisins/09_IMG_2793.jpg"/>
-        <span class="center title ">Bourg d'Oisins</span>
-      </a>
-    
-      <a class="city" id="5" href="/cities/bruges">
-        <img src="/images/thumb/bruges/06_IMG_9103.jpg"/>
-        <span class="center title ">Bruges</span>
-      </a>
-    
-      <a class="city" id="6" href="/cities/brussels">
-        <img src="/images/thumb/brussels/12_IMG_7498.jpg"/>
-        <span class="center title ">Brussels</span>
-      </a>
-    
-      <a class="city" id="7" href="/cities/clermont_ferrant">
-        <img src="/images/thumb/clermont_ferrant/01_IMG_1141.jpg"/>
-        <span class="center title ">Clermont - Ferrant</span>
-      </a>
-    
-      <a class="city" id="8" href="/cities/colmar">
-        <img src="/images/thumb/colmar/01_IMG_5464.jpg"/>
-        <span class="center title ">Colmar</span>
-      </a>
-    
-      <a class="city" id="9" href="/cities/dinant_and_namur">
-        <img src="/images/thumb/dinant_and_namur/01_IMG_7906.jpg"/>
-        <span class="center title ">Dinant & Namur</span>
-      </a>
-    
-      <a class="city" id="10" href="/cities/edam_and_volendam">
-        <img src="/images/thumb/edam_and_volendam/04_IMG_9901.jpg"/>
-        <span class="center title ">Edam & Volendam</span>
-      </a>
-    
-      <a class="city" id="11" href="/cities/ghent">
-        <img src="/images/thumb/ghent/01_IMG_8323.jpg"/>
-        <span class="center title ">Ghent</span>
-      </a>
-    
-      <a class="city" id="12" href="/cities/grenoble_and_col_de_larzelier">
-        <img src="/images/thumb/grenoble_and_col_de_larzelier/01_IMG_2259.jpg"/>
-        <span class="center title ">Grenoble & Col de l'Arzelier</span>
-      </a>
-    
-      <a class="city" id="13" href="/cities/hague">
-        <img src="/images/thumb/hague/02_IMG_9410.jpg"/>
-        <span class="center title ">The Hague</span>
-      </a>
-    
-      <a class="city" id="14" href="/cities/kinderdijk">
-        <img src="/images/thumb/kinderdijk/09_IMG_1012.jpg"/>
-        <span class="center title ">Kinderdijk</span>
-      </a>
-    
-      <a class="city" id="15" href="/cities/liege_and_antwerp">
-        <img src="/images/thumb/liege_and_antwerp/01_IMG_8862.jpg"/>
-        <span class="center title ">Liege & Antwerp</span>
-      </a>
-    
-      <a class="city" id="16" href="/cities/lille">
-        <img src="/images/thumb/lille/03_IMG_3589.jpg"/>
-        <span class="center title ">Lille</span>
-      </a>
-    
-      <a class="city" id="17" href="/cities/luxembourg">
-        <img src="/images/thumb/luxembourg/05_IMG_6435.jpg"/>
-        <span class="center title medium">Luxembourg</span>
-      </a>
-    
-      <a class="city" id="18" href="/cities/lyon_and_rouen">
-        <img src="/images/thumb/lyon_and_rouen/01_IMG_4013.jpg"/>
-        <span class="center title ">Lyon & Rouen</span>
-      </a>
-    
-      <a class="city" id="19" href="/cities/ojstrica_and_mala_osojnica">
-        <img src="/images/thumb/ojstrica_and_mala_osojnica/03_IMG_3446.jpg"/>
-        <span class="center title ">Ojstrica & Mala Osojnica</span>
-      </a>
-    
-      <a class="city" id="20" href="/cities/polignac">
-        <img src="/images/thumb/polignac/IMG_1649.jpg"/>
-        <span class="center title ">Polignac</span>
-      </a>
-    
-      <a class="city" id="21" href="/cities/puy_en_velay">
-        <img src="/images/thumb/puy_en_velay/03_IMG_1358.jpg"/>
-        <span class="center title ">Le Puy en Velay</span>
-      </a>
-    
-      <a class="city" id="22" href="/cities/ribeauville">
-        <img src="/images/thumb/ribeauville/05_IMG_5833.jpg"/>
-        <span class="center title ">Ribeauville</span>
-      </a>
-    
-      <a class="city" id="23" href="/cities/riqewihr">
-        <img src="/images/thumb/riqewihr/01_IMG_6040.jpg"/>
-        <span class="center title ">Riqewihr</span>
-      </a>
-    
-      <a class="city" id="24" href="/cities/rotterdam">
-        <img src="/images/thumb/rotterdam/02_IMG_0504.jpg"/>
-        <span class="center title ">Rotterdam</span>
-      </a>
-    
-      <a class="city" id="25" href="/cities/strasbourg">
-        <img src="/images/thumb/strasbourg/32_IMG_1553-3.jpg"/>
-        <span class="center title ">Strasbourg</span>
-      </a>
-    
-      <a class="city" id="26" href="/cities/vianden">
-        <img src="/images/thumb/vianden/05_IMG_7088.jpg"/>
-        <span class="center title ">Vianden</span>
-      </a>
-    
-      <a class="city" id="27" href="/cities/zaanse_schans_leiden_delft">
-        <img src="/images/thumb/zaanse_schans_leiden_delft/01_IMG_0165.jpg"/>
-        <span class="center title ">Zaanse Schans, Leiden & Delft</span>
-      </a>
-    
-  </div>
+  <span class="main-title">Universidad de la Republica - Sistema de Gestión Administrativa de la Enseñanza</span>
 </div>
 
         </div>
@@ -170,48 +42,33 @@
     </section>
 
     <div id="footer-header">
-  <h1><strong>Photography by</strong> Fabian Rydel</h1>
-  <nav>
-    <ul>
-      <li><span id="#about" onclick="expandFooter()" class="about icon fa-info-circle">About</span></li>
-    </ul>
-  </nav>
+  <img class="photo" src="images/logo-full-horizontal.png"/>
+  <span id="#about" onclick="expandFooter()" class="about icon fa-info-circle">Ayuda</span>
 </div>
 
 <footer id="footer" class="footer">
   <div class="inner split">
     <div>
       <section>
-        <h2>Hey there, my name is Fabian</h2>
-        <p>I am a software developer who loves to travel, so I combine both and travel while working, which has led me to discover a passion for travel photography along the way. Here's where I share the images I've captured during my travels.</p>
-      </section>
-      <section>
-        <h2>Follow me on</h2>
-        <ul class="icons">
-          <li>
-            <a href="https://www.instagram.com/fabirydel" class="icon fa-instagram">
-              <span class="label">Instagram</span>
-            </a>
-          </li>
-        </ul>
+        <h2>Si tenés alguna consulta, no dudes en enviarnos un mensaje!</h2>
+        <p>Ante cualquier duda relacionada a cursos, pruebas, calendario lectivo, horarios de atencion de los diversos departamentos de la universidad, o cualquier otra consulta que puedas tener, envianos un mensaje con tu nombre y email así te podremos contestar a la brevedad.</p>
       </section>
     </div>
     <div>
       <section>
-        <h2>Get in touch</h2>
+        <h2>Estamos a las ordenes!</h2>
         <form method="post" action="#">
           <div class="field half first">
-            <input type="text" name="name" id="name" placeholder="Name"/>
+            <input type="text" name="name" id="name" placeholder="Nombre"/>
           </div>
           <div class="field half right">
             <input type="text" name="email" id="email" placeholder="Email"/>
           </div>
           <div class="field">
-            <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+            <textarea name="message" id="message" rows="4" placeholder="Mensaje"></textarea>
           </div>
           <ul class="actions">
-            <li><input type="submit" value="Send" class="special"/></li>
-            <li><input type="reset" value="Reset"/></li>
+            <li><input type="submit" value="Enviar" class="special"/></li>
           </ul>
         </form>
       </section>

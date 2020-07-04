@@ -5,3 +5,7 @@ function expandFooter () {
 function closeFooter () {
   document.getElementById("footer").classList.remove('active')
 }
+
+function toggleSidebar () {
+  document.getElementById("sidebar").classList.toggle('active')
+}

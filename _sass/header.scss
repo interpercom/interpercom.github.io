@@ -1,28 +1,80 @@
 #header {
-  background: #1f2224;
+  background: white;
   top: 0;
   left: 0;
-  padding: 0 24px;
+  padding: 0 48px;
   position: fixed;
   user-select: none;
-  width: calc(100% - 48px);
+  width: calc(100% - 96px);
   z-index: 5;
+  height: 2.75em;
+  text-align: center;
 
-  h1 {
-    color: #ffffff;
+  #menu {
+    color: #276fa2;
     cursor: pointer;
     display: block;
     display: inline-block;
-    font-size: 14px;
+    font-size: 28px;
     letter-spacing: 0.1em;
-    line-height: 2;
     margin: 0;
-    padding: 0 1.65em;
     text-transform: uppercase;
+    font-weight: 700;
+    float: left;
   }
 
-  a {
-    display: inline-block;
-    vertical-align: middle;
+  .sgae {
+    line-height: 2.75em;
+    color: #276fa2;
+    font-weight: 700;
+    margin-right: 25px;
   }
+}
+
+.sidebar {
+  -moz-transform: translateX(-25em);
+  -moz-transition: -moz-transform 0.5s ease;
+  -ms-transform: translateX(-25em);
+  -ms-transition: -ms-transform 0.5s ease;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateX(-25em);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  background: white;
+  bottom: 2em;
+  color: #a0a0a1;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  transform: translateX(-25em);
+  transition: transform 0.5s ease;
+  z-index: 4;
+  top: -1px;
+  width: 335px;
+  padding-top: 2.75em;
+
+  .option {
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 0 48px;
+    cursor: pointer;
+    white-space: pre;
+
+    &:before {
+      margin-right: 0.75em;
+    }
+
+    &:hover {
+      color: #276fa2;
+      background: #efefef;
+    }
+  }
+}
+
+.sidebar.active {
+  -moz-transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  transform: translateY(1px);
 }
