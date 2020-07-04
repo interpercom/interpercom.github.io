@@ -1,0 +1,104 @@
+/* The Modal (background) */
+.modal {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 10;
+  padding: 50px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  -webkit-transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  height: calc(100% - 100px);
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  opacity: 0.75;
+  transition: 0.6s ease;
+}
+
+.close:hover,
+.close:focus,
+.prev:hover,
+.next:hover {
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Hide the slides by default */
+.slide {
+  background: black;
+  display: none;
+  height: 100%;
+  width: 100%;
+
+  img {
+    max-height: calc(100vh - 100px);
+    object-fit: contain;
+  }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  opacity: 0.75;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
