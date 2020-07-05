@@ -137,10 +137,10 @@
   display: inline-block;
   font-size: 0.9em;
   font-weight: 300;
-  height: 3.05556em;
+  height: 2.05556em;
   letter-spacing: 0.1em;
-  line-height: 3.05556em;
-  padding: 0 2.5em;
+  line-height: 2.05556em;
+  padding: 1px 1em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -177,4 +177,33 @@
       margin-left: 75px;
     }
   }
+}
+
+.table-full {
+  width: 100%;
+}
+
+.table-half {
+  width: 60%;
+}
+
+.news {
+  border: 1px solid #296da2;
+  border-radius: 3px;
+  padding: 15px;
+  background: white;
+  margin-bottom: 25px;
+
+  .at {
+    float: right;
+  }
+
+  .title {
+    color: #296da2;
+    text-decoration: underline;
+  }
+}
+
+.table-news {
+  display: block;
 }

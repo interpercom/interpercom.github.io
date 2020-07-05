@@ -1528,7 +1528,7 @@ footer input[type="submit"].disabled, footer input[type="submit"]:disabled, foot
 
 .half-user { width: 48%; display: inline-block; vertical-align: top; }
 
-.save-button { -webkit-appearance: none; -ms-appearance: none; appearance: none; -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; background-color: transparent; border: 0; border-radius: 0; box-shadow: inset 0 0 0 2px #005e98; color: #ffffff !important; cursor: pointer; display: inline-block; font-size: 0.9em; font-weight: 300; height: 3.05556em; letter-spacing: 0.1em; line-height: 3.05556em; padding: 0 2.5em; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap; background-color: #005e98; }
+.save-button { -webkit-appearance: none; -ms-appearance: none; appearance: none; -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; background-color: transparent; border: 0; border-radius: 0; box-shadow: inset 0 0 0 2px #005e98; color: #ffffff !important; cursor: pointer; display: inline-block; font-size: 0.9em; font-weight: 300; height: 2.05556em; letter-spacing: 0.1em; line-height: 2.05556em; padding: 1px 1em; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap; background-color: #005e98; }
 
 .table-container { display: block; margin-bottom: 30px; }
 .table-container:last-child { margin-bottom: 0; }
@@ -1538,6 +1538,16 @@ footer input[type="submit"].disabled, footer input[type="submit"]:disabled, foot
 .table-user .row-user { padding: 5px 25px; }
 .table-user .row-user .cell-user { text-align: start; }
 .table-user .row-user .cell-input { margin-left: 75px; }
+
+.table-full { width: 100%; }
+
+.table-half { width: 60%; }
+
+.news { border: 1px solid #296da2; border-radius: 3px; padding: 15px; background: white; margin-bottom: 25px; }
+.news .at { float: right; }
+.news .title { color: #296da2; text-decoration: underline; }
+
+.table-news { display: block; }
 
 #header { background: white; top: 0; left: 0; padding: 0 48px; position: fixed; user-select: none; width: calc(100% - 96px); z-index: 5; height: 2.75em; text-align: center; }
 #header #menu { color: #276fa2; cursor: pointer; display: block; display: inline-block; font-size: 28px; letter-spacing: 0.1em; margin: 0; text-transform: uppercase; font-weight: 700; float: left; }
@@ -1550,9 +1560,9 @@ footer input[type="submit"].disabled, footer input[type="submit"]:disabled, foot
 .dropdown .name { display: block; text-align: end; border-bottom: 1px solid #333; margin-bottom: 13px; }
 .dropdown .btn a { color: #333; cursor: pointer; }
 
-.sidebar { -moz-transform: translateX(-25em); -moz-transition: -moz-transform 0.5s ease; -ms-transform: translateX(-25em); -ms-transition: -ms-transform 0.5s ease; -webkit-overflow-scrolling: touch; -webkit-transform: translateX(-25em); -webkit-transition: -webkit-transform 0.5s ease; background: white; bottom: 2em; color: #a0a0a1; left: 0; overflow-y: auto; position: fixed; transform: translateX(-25em); transition: transform 0.5s ease; z-index: 4; top: -1px; width: 335px; padding-top: 2.75em; }
+.sidebar { -moz-transform: translateX(-25em); -moz-transition: -moz-transform 0.5s ease; -ms-transform: translateX(-25em); -ms-transition: -ms-transform 0.5s ease; -webkit-overflow-scrolling: touch; -webkit-transform: translateX(-25em); -webkit-transition: -webkit-transform 0.5s ease; background: white; bottom: 2em; color: #333; left: 0; overflow-y: auto; position: fixed; transform: translateX(-25em); transition: transform 0.5s ease; z-index: 4; top: -1px; width: 335px; padding-top: 2.75em; }
 .sidebar .menu-options { padding-top: 12px; }
-.sidebar .option { height: 45px; line-height: 45px; font-size: 18px; font-weight: 200; padding: 0 48px; cursor: pointer; white-space: pre; color: #a0a0a1; display: block; }
+.sidebar .option { height: 45px; line-height: 45px; font-size: 18px; font-weight: 200; padding: 0 48px; cursor: pointer; white-space: pre; color: #333; display: block; }
 .sidebar .option:before { margin-right: 0.75em; }
 .sidebar .option:hover { color: #276fa2; background: #efefef; text-decoration: none; }
 

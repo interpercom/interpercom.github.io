@@ -85,7 +85,7 @@
   -webkit-transition: -webkit-transform 0.5s ease;
   background: white;
   bottom: 2em;
-  color: #a0a0a1;
+  color: #333;
   left: 0;
   overflow-y: auto;
   position: fixed;
@@ -108,7 +108,7 @@
     padding: 0 48px;
     cursor: pointer;
     white-space: pre;
-    color: #a0a0a1;
+    color: #333;
     display: block;
 
     &:before {
