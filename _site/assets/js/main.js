@@ -10,6 +10,10 @@ function toggleSidebar () {
   document.getElementById("sidebar").classList.toggle('active')
 }
 
+function toggleDropdown () {
+  document.getElementById("dropdownUser").classList.toggle('active')
+}
+
 function toggleTableTab (event) {
 	if (event.currentTarget.classList[1] != "active") {
 		let activeTab = document.getElementsByClassName("tab active")[0]

@@ -5,6 +5,7 @@
 
 .page-body {
   background: #efefef;
+  width: 100%;
 }
 
 .page-content {
@@ -109,6 +110,71 @@
         color: #cc1919;
         font-size: 24px;
       }
+    }
+  }
+}
+
+.half-user {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.save-button {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 2px #005e98;
+  color: #ffffff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: 300;
+  height: 3.05556em;
+  letter-spacing: 0.1em;
+  line-height: 3.05556em;
+  padding: 0 2.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #005e98;
+}
+
+.table-container {
+  display: block;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.table-user {
+  display: inline-block;
+  min-width: 300px;
+
+  .headers-user .header-user {
+    text-align: start;
+    padding: 0 25px;
+  }
+
+  .row-user {
+    padding: 5px 25px;
+
+    .cell-user {
+      text-align: start;
+    }
+
+    .cell-input {
+      margin-left: 75px;
     }
   }
 }

@@ -1485,32 +1485,14 @@ footer input[type="submit"].special:hover:active, footer input[type="reset"].spe
 footer input[type="submit"].disabled, footer input[type="submit"]:disabled, footer input[type="reset"].disabled, footer input[type="reset"]:disabled, footer input[type="button"].disabled, footer input[type="button"]:disabled, footer button.disabled, footer button:disabled, footer .button.disabled, footer .button:disabled { -moz-pointer-events: none; -webkit-pointer-events: none; -ms-pointer-events: none; pointer-events: none; opacity: 0.35; }
 
 /* The Modal (background) */
-.modal { display: none; visibility: hidden; opacity: 0; position: fixed; z-index: 10; padding: 50px 0; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: black; -webkit-transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out; transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out; }
+.modal { display: none; visibility: hidden; opacity: 0; position: fixed; z-index: 10; padding: 50px 0; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: #0000008f; -webkit-transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out; transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out; }
 
 /* Modal Content */
-.modal-content { position: relative; background-color: #fefefe; margin: auto; padding: 0; width: 90%; max-width: 1200px; height: calc(100% - 100px); }
+.modal-content { position: relative; background-color: #fefefe; margin: auto; padding: 0; width: 50%; padding: 1em 2em; }
 
 /* The Close Button */
-.close { color: white; position: absolute; top: 10px; right: 25px; font-size: 35px; opacity: 0.75; transition: 0.6s ease; }
-
-.close:hover, .close:focus, .prev:hover, .next:hover { color: white; cursor: pointer; opacity: 1; text-decoration: none; }
-
-/* Hide the slides by default */
-.slide { background: black; display: none; height: 100%; width: 100%; }
-.slide img { max-height: calc(100vh - 100px); object-fit: contain; }
-
-/* Next & previous buttons */
-.prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -50px; color: white; font-weight: bold; font-size: 20px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none; opacity: 0.75; -webkit-user-select: none; }
-
-/* Position the "next button" to the right */
-.next { right: 0; border-radius: 3px 0 0 3px; }
-
-/* Caption text */
-.caption-container { text-align: center; background-color: black; padding: 2px 16px; color: white; }
-
-img.demo { opacity: 0.6; }
-
-.active, .demo:hover { opacity: 1; }
+.close { color: black; position: absolute; top: 10px; right: 25px; font-size: 35px; opacity: 0.75; transition: 0.6s ease; cursor: pointer; }
+.close:hover { text-decoration: none; }
 
 .default.page-content { background-color: #efefef; }
 
@@ -1518,7 +1500,7 @@ img.demo { opacity: 0.6; }
 
 .page { margin-top: 2.75em; z-index: 1; }
 
-.page-body { background: #efefef; }
+.page-body { background: #efefef; width: 100%; }
 
 .page-content { padding: 2em 48px 5em 48px; }
 
@@ -1544,11 +1526,29 @@ img.demo { opacity: 0.6; }
 .table .headers .icon, .table .row .icon { font-size: 32px; cursor: pointer; }
 .table .headers .icon.fa-eraser, .table .row .icon.fa-eraser { color: #cc1919; font-size: 24px; }
 
+.half-user { width: 48%; display: inline-block; vertical-align: top; }
+
+.save-button { -webkit-appearance: none; -ms-appearance: none; appearance: none; -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; background-color: transparent; border: 0; border-radius: 0; box-shadow: inset 0 0 0 2px #005e98; color: #ffffff !important; cursor: pointer; display: inline-block; font-size: 0.9em; font-weight: 300; height: 3.05556em; letter-spacing: 0.1em; line-height: 3.05556em; padding: 0 2.5em; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap; background-color: #005e98; }
+
+.table-container { display: block; margin-bottom: 30px; }
+.table-container:last-child { margin-bottom: 0; }
+
+.table-user { display: inline-block; min-width: 300px; }
+.table-user .headers-user .header-user { text-align: start; padding: 0 25px; }
+.table-user .row-user { padding: 5px 25px; }
+.table-user .row-user .cell-user { text-align: start; }
+.table-user .row-user .cell-input { margin-left: 75px; }
+
 #header { background: white; top: 0; left: 0; padding: 0 48px; position: fixed; user-select: none; width: calc(100% - 96px); z-index: 5; height: 2.75em; text-align: center; }
 #header #menu { color: #276fa2; cursor: pointer; display: block; display: inline-block; font-size: 28px; letter-spacing: 0.1em; margin: 0; text-transform: uppercase; font-weight: 700; float: left; }
 #header #user { color: #276fa2; cursor: pointer; display: block; display: inline-block; font-size: 28px; letter-spacing: 0.1em; margin: 0; text-transform: uppercase; font-weight: 700; float: right; }
 #header .sgae { line-height: 2.75em; color: #276fa2; font-weight: 700; margin-right: 25px; }
 #header .sgae:hover { text-decoration: none; }
+
+.dropdown { position: absolute; right: 48px; background: white; color: #333; top: 2.5em; padding: 15px; z-index: 5; display: none; }
+.dropdown.active { display: block; }
+.dropdown .name { display: block; text-align: end; border-bottom: 1px solid #333; margin-bottom: 13px; }
+.dropdown .btn a { color: #333; cursor: pointer; }
 
 .sidebar { -moz-transform: translateX(-25em); -moz-transition: -moz-transform 0.5s ease; -ms-transform: translateX(-25em); -ms-transition: -ms-transform 0.5s ease; -webkit-overflow-scrolling: touch; -webkit-transform: translateX(-25em); -webkit-transition: -webkit-transform 0.5s ease; background: white; bottom: 2em; color: #a0a0a1; left: 0; overflow-y: auto; position: fixed; transform: translateX(-25em); transition: transform 0.5s ease; z-index: 4; top: -1px; width: 335px; padding-top: 2.75em; }
 .sidebar .menu-options { padding-top: 12px; }

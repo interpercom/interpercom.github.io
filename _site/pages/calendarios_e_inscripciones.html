@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link type="application/atom+xml" rel="alternate" href="http://localhost:3000/feed.xml" title="Your awesome title" />
-  <script src="/assets/js/gallery-modal.js"></script>
+  <script src="/assets/js/modal.js"></script>
   <script src="/assets/js/main.js"></script>
 </head>
 
   <div id="header">
   <span id="menu" onclick="toggleSidebar()" class="menu icon fa-bars"></span>
   <a class="sgae" href="/">SGAE</a>
-  <span id="user" onclick="toggleUserDropdown()" class="menu icon fa-user"></span>
+  <span id="user" onclick="toggleDropdown()" class="menu icon fa-user"></span>
 </div>
 
 <div id="sidebar" class="sidebar">
@@ -24,8 +24,15 @@
 		<a href="/pages/calendarios_e_inscripciones" class="option icon fa-calendar">Calendarios e Inscripciones</a>
 		<a href="/pages/consulta_de_inscripciones" class="option icon fa-pencil-square-o">Consulta de Inscripciones</a>
 		<a href="/pages/escolaridad" class="option icon fa-graduation-cap">Escolaridad</a>
-		<a href="/pages/sanciones" class="option icon fa-ban">Sanciones</a>
 	</div>
+</div>
+
+<div id="dropdownUser" class="dropdown" onclick="toggleDropdown()">
+  <div class="dropdown-content">
+    <span class="name">Fabian Rydel Suster</span>
+    <div class="btn"><a href="/pages/datos_personales">Datos Personales</a></div>
+    <div class="btn"><a>Salir</a></div>
+  </div>
 </div>
 
 
@@ -199,7 +206,7 @@
     <div>
       <section>
         <h2>Si tenés alguna consulta, no dudes en enviarnos un mensaje!</h2>
-        <p>Ante cualquier duda relacionada a cursos, pruebas, calendario lectivo, horarios de atencion de los diversos departamentos de la universidad, o cualquier otra consulta que puedas tener, envianos un mensaje con tu nombre y email así te podremos contestar a la brevedad.</p>
+        <p>Ante cualquier duda relacionada a cursos, pruebas, calendario lectivo, horarios de atencion de los distintos departamentos de la universidad, o cualquier otra consulta, envianos un mensaje con tu nombre y mail así te podremos contestar a la brevedad.</p>
       </section>
     </div>
     <div>
@@ -226,30 +233,4 @@
 </footer>
 
   </body>
-
-  <div id="myModal" class="modal" onclick="closeModal()">
-  <a class="close cursor icon fa fa-times" onclick="closeModal()"></a>
-  <div class="modal-content">
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-
-    <a class="prev icon fa-chevron-left" onclick="plusSlides(event, -1)"></a>
-    <a class="next icon fa-chevron-right" onclick="plusSlides(event, 1)"></a>
-  </div>
-</div>
-
-
 </html>

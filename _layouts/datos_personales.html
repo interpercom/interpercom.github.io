@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+  {% include head.html %}
+  {% include header.html %}
+
+  <body class="page-body">
+
+    <section id="page" class="page">
+      <main class="page-content" aria-label="Content">
+        <div class="half-user">
+          <div class=table-container>
+            <div class="table table-user active">
+              <div class="headers headers-user">
+                <div class="header header-user">Datos Personales</div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Documento</div>
+                <div class="cell cell-user cell-input"><input placeholder="5.455.876-0"/></div>
+              </div>
+              <div class="row row-user alternate-color">
+                <div class="cell cell-user">Nombre</div>
+                <div class="cell cell-user cell-input"><input placeholder="Juan"/></div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Apellidos</div>
+                <div class="cell cell-user cell-input"><input placeholder="Perez Rodriguez"/></div>
+              </div>
+            </div>
+          </div>
+
+          <div class=table-container>
+            <div class="table table-user active">
+              <div class="headers headers-user">
+                <div class="header header-user">Datos de Contacto</div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Domicilio</div>
+                <div class="cell cell-user cell-input"><input placeholder="18 de Julio 1256, Apto 403"/></div>
+              </div>
+              <div class="row row-user alternate-color">
+                <div class="cell cell-user">Teléfono</div>
+                <div class="cell cell-user cell-input"><input placeholder="26285678"/></div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Celular</div>
+                <div class="cell cell-user cell-input"><input placeholder="099444321"/></div>
+              </div>
+              <div class="row row-user alternate-color">
+                <div class="cell cell-user">Email</div>
+                <div class="cell cell-user cell-input"><input placeholder="juanr@fing.com.uy"/></div>
+              </div>
+            </div>
+          </div>
+          <button class="save-button">Guardar</button>
+        </div>
+
+        <div class="half-user">
+          <div class=table-container>
+            <div class="table table-user active">
+              <div class="headers headers-user">
+                <div class="header header-user">Inscripciones a carrera, ciclo, CIO o perfil</div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">INGENIERIA EN COMPUTACION - Plan 1997 - Fecha de inscripción: 22/02/2013</div>
+              </div>
+            </div>
+          </div>
+
+          <div class=table-container>
+            <div class="table table-user active">
+              <div class="headers headers-user">
+                <div class="header header-user">Sanciones UdelaR</div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Desde 05/07/2010 hasta 19/07/2010 - Causa: FORMULARIO ESTADÍSTICO DE INGRESO</div>
+              </div>
+            </div>
+          </div>
+
+          <div class=table-container>
+            <div class="table table-user active">
+              <div class="headers headers-user">
+                <div class="header header-user">Sanciones carrera</div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Desde 20/06/2018 hasta 10/06/2019 - Causa: FORMULARIO CONTINUO DE GRADO</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    {% include footer.html %}
+  </body>
+</html>

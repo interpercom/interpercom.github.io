@@ -1,7 +1,7 @@
 <div id="header">
   <span id="menu" onclick="toggleSidebar()" class="menu icon fa-bars"></span>
   <a class="sgae" href="/">SGAE</a>
-  <span id="user" onclick="toggleUserDropdown()" class="menu icon fa-user"></span>
+  <span id="user" onclick="toggleDropdown()" class="menu icon fa-user"></span>
 </div>
 
 <div id="sidebar" class="sidebar">
@@ -11,6 +11,13 @@
 		<a href="/pages/calendarios_e_inscripciones" class="option icon fa-calendar">Calendarios e Inscripciones</a>
 		<a href="/pages/consulta_de_inscripciones" class="option icon fa-pencil-square-o">Consulta de Inscripciones</a>
 		<a href="/pages/escolaridad" class="option icon fa-graduation-cap">Escolaridad</a>
-		<a href="/pages/sanciones" class="option icon fa-ban">Sanciones</a>
 	</div>
+</div>
+
+<div id="dropdownUser" class="dropdown" onclick="toggleDropdown()">
+  <div class="dropdown-content">
+    <span class="name">Fabian Rydel Suster</span>
+    <div class="btn"><a href="/pages/datos_personales">Datos Personales</a></div>
+    <div class="btn"><a>Salir</a></div>
+  </div>
 </div>

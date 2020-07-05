@@ -8,13 +8,80 @@
 
     <section id="page" class="page">
       <main class="page-content" aria-label="Content">
-        Previas
+        <span class="main-title">Previas</span>
+
+        <div class="control-number">
+          <span>Filtrar por: </span>
+          <input type="text" name="name" id="name" placeholder="Filtro"/>
+        </div>
+
+        <div class="calendar">
+          <div class="table active">
+            <div class="headers">
+              <div class="header">Código</div>
+              <div class="header">Materia</div>
+              <div class="header">Habilitado?</div>
+              <div class="header">Qué previas tiene?</div>
+              <div class="header">De que es previa?</div>
+            </div>
+            <div class="row alternate-color">
+              <div class="cell">1446</div>
+              <div class="cell">REDES DE COMPUTADORAS</div>
+              <div class="cell">Curso: NO - Examen: NO</div>
+              <div class="cell" onclick="openModalPrevia()"><a>Ver</a></div>
+              <div class="cell" onclick="openModalPreviaOf()"><a>Ver</a></div>
+            </div>
+            <div class="row">
+              <div class="cell">5914</div>
+              <div class="cell">ALGEBRA LINEAL NUMERICA</div>
+              <div class="cell">Curso: SI - Examen: NO</div>
+              <div class="cell" onclick="openModalPrevia()"><a>Ver</a></div>
+              <div class="cell" onclick="openModalPreviaOf()"><a>Ver</a></div>
+            </div>
+            <div class="row alternate-color">
+              <div class="cell">1765</div>
+              <div class="cell">CÁLCULO 2</div>
+              <div class="cell">Curso: SI - Examen: SI</div>
+              <div class="cell" onclick="openModalPrevia()"><a>Ver</a></div>
+              <div class="cell" onclick="openModalPreviaOf()"><a>Ver</a></div>
+            </div>
+            <div class="row">
+              <div class="cell">1224</div>
+              <div class="cell">ECONOMIA</div>
+              <div class="cell">Curso: SI - Examen: NO</div>
+              <div class="cell" onclick="openModalPrevia()"><a>Ver</a></div>
+              <div class="cell" onclick="openModalPreviaOf()"><a>Ver</a></div>
+            </div>
+            <div class="row alternate-color">
+              <div class="cell">1537</div>
+              <div class="cell">SISTEMAS OPERATIVOS</div>
+              <div class="cell">Curso: NO - Examen: NO</div>
+              <div class="cell" onclick="openModalPrevia()"><a>Ver</a></div>
+              <div class="cell" onclick="openModalPreviaOf()"><a>Ver</a></div>
+            </div>
+            <div class="row">
+              <div class="cell">1545</div>
+              <div class="cell">CRIPTOGRAFIA</div>
+              <div class="cell">Curso: NO - Examen: NO</div>
+              <div class="cell" onclick="openModalPrevia()"><a>Ver</a></div>
+              <div class="cell" onclick="openModalPreviaOf()"><a>Ver</a></div>
+            </div>
+            <div class="row alternate-color">
+              <div class="cell">1743</div>
+              <div class="cell">ARQUITECTURA DE SOFTWARE</div>
+              <div class="cell">Curso: SI - Examen: NO</div>
+              <div class="cell" onclick="openModalPrevia()"><a>Ver</a></div>
+              <div class="cell" onclick="openModalPreviaOf()"><a>Ver</a></div>
+            </div>
+          </div>
+        </div>
       </main>
     </section>
 
     {% include footer.html %}
   </body>
 
-  {% include gallery_modal.html %}
+  {% include modal_previa.html %}
+  {% include modal_previa_de.html %}
 
 </html>

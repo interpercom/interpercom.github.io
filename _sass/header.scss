@@ -48,6 +48,33 @@
   }
 }
 
+.dropdown {
+  position: absolute;
+  right: 48px;
+  background: white;
+  color: #333;
+  top: 2.5em;
+  padding: 15px;
+  z-index: 5;
+  display: none;
+
+  &.active {
+    display: block
+  }
+
+  .name {
+    display: block;
+    text-align: end;
+    border-bottom: 1px solid #333;
+    margin-bottom: 13px;
+  }
+
+  .btn a {
+    color: #333;
+    cursor: pointer;
+  }
+}
+
 .sidebar {
   -moz-transform: translateX(-25em);
   -moz-transition: -moz-transform 0.5s ease;

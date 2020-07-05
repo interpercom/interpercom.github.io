@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <title>Datos_personales</title>
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:3000/feed.xml" title="Your awesome title" />
+  <script src="/assets/js/modal.js"></script>
+  <script src="/assets/js/main.js"></script>
+</head>
+
+  <div id="header">
+  <span id="menu" onclick="toggleSidebar()" class="menu icon fa-bars"></span>
+  <a class="sgae" href="/">SGAE</a>
+  <span id="user" onclick="toggleDropdown()" class="menu icon fa-user"></span>
+</div>
+
+<div id="sidebar" class="sidebar">
+	<div class="menu-options">
+		<a href="/pages/planes_de_estudio" class="option icon fa-map">Planes de Estudio</a>
+		<a href="/pages/previas" class="option icon fa-eye">Previas</a>
+		<a href="/pages/calendarios_e_inscripciones" class="option icon fa-calendar">Calendarios e Inscripciones</a>
+		<a href="/pages/consulta_de_inscripciones" class="option icon fa-pencil-square-o">Consulta de Inscripciones</a>
+		<a href="/pages/escolaridad" class="option icon fa-graduation-cap">Escolaridad</a>
+	</div>
+</div>
+
+<div id="dropdownUser" class="dropdown" onclick="toggleDropdown()">
+  <div class="dropdown-content">
+    <span class="name">Fabian Rydel Suster</span>
+    <div class="btn"><a href="/pages/datos_personales">Datos Personales</a></div>
+    <div class="btn"><a>Salir</a></div>
+  </div>
+</div>
+
+
+  <body class="page-body">
+
+    <section id="page" class="page">
+      <main class="page-content" aria-label="Content">
+        <div class="half-user">
+          <div class=table-container>
+            <div class="table table-user active">
+              <div class="headers headers-user">
+                <div class="header header-user">Datos Personales</div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Documento</div>
+                <div class="cell cell-user cell-input"><input placeholder="5.455.876-0"/></div>
+              </div>
+              <div class="row row-user alternate-color">
+                <div class="cell cell-user">Nombre</div>
+                <div class="cell cell-user cell-input"><input placeholder="Juan"/></div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Apellidos</div>
+                <div class="cell cell-user cell-input"><input placeholder="Perez Rodriguez"/></div>
+              </div>
+            </div>
+          </div>
+
+          <div class=table-container>
+            <div class="table table-user active">
+              <div class="headers headers-user">
+                <div class="header header-user">Datos de Contacto</div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Domicilio</div>
+                <div class="cell cell-user cell-input"><input placeholder="18 de Julio 1256, Apto 403"/></div>
+              </div>
+              <div class="row row-user alternate-color">
+                <div class="cell cell-user">Teléfono</div>
+                <div class="cell cell-user cell-input"><input placeholder="26285678"/></div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Celular</div>
+                <div class="cell cell-user cell-input"><input placeholder="099444321"/></div>
+              </div>
+              <div class="row row-user alternate-color">
+                <div class="cell cell-user">Email</div>
+                <div class="cell cell-user cell-input"><input placeholder="juanr@fing.com.uy"/></div>
+              </div>
+            </div>
+          </div>
+          <button class="save-button">Guardar</button>
+        </div>
+
+        <div class="half-user">
+          <div class=table-container>
+            <div class="table table-user active">
+              <div class="headers headers-user">
+                <div class="header header-user">Inscripciones a carrera, ciclo, CIO o perfil</div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">INGENIERIA EN COMPUTACION - Plan 1997 - Fecha de inscripción: 22/02/2013</div>
+              </div>
+            </div>
+          </div>
+
+          <div class=table-container>
+            <div class="table table-user active">
+              <div class="headers headers-user">
+                <div class="header header-user">Sanciones UdelaR</div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Desde 05/07/2010 hasta 19/07/2010 - Causa: FORMULARIO ESTADÍSTICO DE INGRESO</div>
+              </div>
+            </div>
+          </div>
+
+          <div class=table-container>
+            <div class="table table-user active">
+              <div class="headers headers-user">
+                <div class="header header-user">Sanciones carrera</div>
+              </div>
+              <div class="row row-user">
+                <div class="cell cell-user">Desde 20/06/2018 hasta 10/06/2019 - Causa: FORMULARIO CONTINUO DE GRADO</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <div id="footer-header">
+  <img class="photo" src="/images/logo-full-horizontal.png"/>
+  <span id="#about" onclick="expandFooter()" class="about icon fa-info-circle">Ayuda</span>
+</div>
+
+<footer id="footer" class="footer">
+  <div class="inner split">
+    <div>
+      <section>
+        <h2>Si tenés alguna consulta, no dudes en enviarnos un mensaje!</h2>
+        <p>Ante cualquier duda relacionada a cursos, pruebas, calendario lectivo, horarios de atencion de los distintos departamentos de la universidad, o cualquier otra consulta, envianos un mensaje con tu nombre y mail así te podremos contestar a la brevedad.</p>
+      </section>
+    </div>
+    <div>
+      <section>
+        <h2>Estamos a las ordenes!</h2>
+        <form method="post" action="#">
+          <div class="field half first">
+            <input type="text" name="name" id="name" placeholder="Nombre"/>
+          </div>
+          <div class="field half right">
+            <input type="text" name="email" id="email" placeholder="Email"/>
+          </div>
+          <div class="field">
+            <textarea name="message" id="message" rows="4" placeholder="Mensaje"></textarea>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Enviar" class="special"/></li>
+          </ul>
+        </form>
+      </section>
+    </div>
+  </div>
+  <span class="close cursor" onclick="closeFooter()">&times;</span>
+</footer>
+
+  </body>
+</html>
