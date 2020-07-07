@@ -1555,7 +1555,7 @@ footer input[type="submit"].disabled, footer input[type="submit"]:disabled, foot
 #header .sgae { line-height: 2.75em; color: #276fa2; font-weight: 700; margin-right: 25px; }
 #header .sgae:hover { text-decoration: none; }
 
-.dropdown { position: absolute; right: 48px; background: white; color: #333; top: 2.5em; padding: 15px; z-index: 5; display: none; }
+.dropdown { position: fixed; right: 48px; background: white; color: #333; top: 2.5em; padding: 15px; z-index: 5; display: none; }
 .dropdown.active { display: block; }
 .dropdown .name { display: block; text-align: end; border-bottom: 1px solid #333; margin-bottom: 13px; }
 .dropdown .btn a { color: #333; cursor: pointer; }
